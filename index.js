@@ -81,7 +81,7 @@ function editTask(){
                 updateTask = document.createElement('input')
                 updateTask.setAttribute('placeholder',`${myStoredTasks[e.target.value]}`)
                 let submitButton = document.createElement('button');
-                submitButton.innerText = "Update";
+                submitButton.setAttribute('class','fa fa-refresh')
                 submitButton.setAttribute('value', e.target.value )
                 form.appendChild(updateTask)
                 form.appendChild(submitButton)
